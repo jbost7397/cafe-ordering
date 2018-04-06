@@ -66,8 +66,8 @@ Methods
     <panel_attributes>Client:Customer:Order
 --
 Attributes
-+items: Array[Food]
-+price: Float
+-items: Array[Food]
+-price: Float
 --
 Methods
 +addItem(item)
