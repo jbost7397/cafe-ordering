@@ -29,7 +29,7 @@ Attributes
 +name: String
 +uniqueName: String
 Methods
-+placeOrder()
++placeOrder(Order)
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -70,8 +70,8 @@ Attributes
 +price: Float
 --
 Methods
-+addItem()
-+removeItem()
++addItem(item)
++removeItem(item)
 </panel_attributes>
     <additional_attributes/>
   </element>
