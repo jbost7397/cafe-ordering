@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>100</x>
+      <y>290</y>
+      <w>320</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>Server
+--
+-curCustomerName: String
+-curUniqueCustomerName: String
+-curUniqueEmplName: String
+-curUniqueEmplPass: String
+-orderConfirmation: Boolean
+-orderComplete: Boolean
+--
+-getOrder(): Order
+-sendOrder(Order): Boolean
+-getConfirmation(Boolean): Order
+-sendConfirmation(Boolean)
+-getCompletion(Boolean): Order
+-sendCompletion(Boolean): Order
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>130</y>
+      <w>110</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>/Client:Customer/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>130</y>
+      <w>110</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>/Client:Employee/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>100</x>
+      <y>150</y>
+      <w>150</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>150</y>
+      <w>130</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>110.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+</diagram>
