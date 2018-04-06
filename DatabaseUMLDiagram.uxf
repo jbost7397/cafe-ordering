@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>20</y>
+      <w>210</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Database
+--
+Methods
+push()
+write()
+query()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>520</x>
+      <y>190</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Database:Employee
+--
+Attributes
+-name: String
+-uniqueName: String
+-password: String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>820</x>
+      <y>180</y>
+      <w>210</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Database:Menu
+--
+Attributes
+-menu: Array[Product]
+--
+Methods
++show()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1100</x>
+      <y>200</y>
+      <w>270</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Database:Open_Orders
+--
+Attributes
+-orders: Table[Order]
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>820</x>
+      <y>330</y>
+      <w>210</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>Database:Product
+--
+Attributes
+-name: String
+-price: Float
+-inventory: Integer
+--
+Methods
++addInventory()
++removeInventory()
++getName()
++getPrice()
++getInventory()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>580</x>
+      <y>630</y>
+      <w>270</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>Order
+--
+Attributes
+-uniqueId: String
+-date: Date
+-price: Float
+-items: Client:Customer:Orders.items
+-payment: String
+--
+Method
++getUniqueId()
++getDate()
++getPrice()
++getItems()
++getPayment
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>130</x>
+      <y>200</y>
+      <w>270</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Database:Orders
+--
+Attributes
+-orders: Table[Order]
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>840</x>
+      <y>280</y>
+      <w>450</w>
+      <h>480</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;460.0;430.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>280</y>
+      <w>310</w>
+      <h>370</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>290.0;350.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>910</x>
+      <y>280</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>100</y>
+      <w>310</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;100.0;290.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>790</x>
+      <y>100</y>
+      <w>70</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>50.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>820</x>
+      <y>100</y>
+      <w>350</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>330.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>610</x>
+      <y>100</y>
+      <w>120</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;90.0;100.0;10.0</additional_attributes>
+  </element>
+</diagram>
