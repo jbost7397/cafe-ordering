@@ -63,7 +63,7 @@ Methods
     <panel_attributes>Database:Open_Orders
 --
 Attributes
--orders: Array[Order]
+-orders: Table[Order]
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -98,7 +98,7 @@ Methods
       <w>270</w>
       <h>230</h>
     </coordinates>
-    <panel_attributes>Database:Order
+    <panel_attributes>Order
 --
 Attributes
 -uniqueId: String
@@ -127,7 +127,7 @@ Method
     <panel_attributes>Database:Orders
 --
 Attributes
--orders: Array[Order]
+-orders: Table[Order]
 </panel_attributes>
     <additional_attributes/>
   </element>
